@@ -85,7 +85,7 @@
   <h1>Junior Maih</h1>
   <p class="tagline">Applied macroeconomist &amp; econometrician · Creator of the RISE toolbox</p>
   <p class="links">
-    <a href="mailto:junior.maih@gmail.com">junior.maih@gmail.com</a>
+    <a href="#" data-email>junior.maih [at] gmail.com</a>
     <a href="https://github.com/jmaih">GitHub</a>
     <a href="https://ideas.repec.org/f/pma2398.html">IDEAS/RePEc</a>
     <a href="https://github.com/jmaih/RISE_toolbox">RISE toolbox</a>
@@ -148,7 +148,7 @@
       SVAR, BVAR-DSGE, and panel models consolidated behind a single model class, on a
       unified regime-switching state-space architecture, with an interactive cockpit
       for browser-based experimentation. Code access for collaborating institutions and
-      course participants &mdash; <a href="mailto:junior.maih@gmail.com">get in touch</a>.
+      course participants &mdash; <a href="#" data-email-link>get in touch</a>.
     </li>
     <li>
       <strong><a href="https://jmaih.github.io/rise-stable-docs/">RISE Stable</a></strong>
@@ -228,9 +228,21 @@
 </section>
 
 <footer>
-  <p>Junior Maih · Oslo, Norway · <a href="mailto:junior.maih@gmail.com">junior.maih@gmail.com</a></p>
+  <p>Junior Maih · Oslo, Norway · <a href="#" data-email>junior.maih [at] gmail.com</a></p>
 </footer>
 
 </div>
+<script>
+  (function () {
+    var addr = ['junior', 'maih'].join('.') + '@' + ['gmail', 'com'].join('.');
+    document.querySelectorAll('[data-email]').forEach(function (el) {
+      el.href = 'mailto:' + addr;
+      el.textContent = addr;
+    });
+    document.querySelectorAll('[data-email-link]').forEach(function (el) {
+      el.href = 'mailto:' + addr;
+    });
+  })();
+</script>
 </body>
 </html>
