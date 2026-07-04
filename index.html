@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junior Maih — Economist</title>
+<meta name="description" content="Junior Maih — applied macroeconomist and econometrician, creator of the RISE toolbox for regime-switching DSGE modeling.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a5276;
+    --rule: #e0e0e0;
+    --chip: #f2f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181c;
+      --text: #e8e6e3;
+      --muted: #9aa4ad;
+      --accent: #7fb3d3;
+      --rule: #2c343b;
+      --chip: #1d242b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 Georgia, 'Times New Roman', serif;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    letter-spacing: 0.01em;
+  }
+  .tagline { color: var(--muted); margin: 0 0 1rem; font-style: italic; }
+  nav {
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.5rem 0;
+    margin: 1.25rem 0 2rem;
+  }
+  nav a { margin-right: 1.1rem; text-decoration: none; color: var(--accent); }
+  nav a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 2.4rem 0 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.55rem; }
+  .pubs li { margin-bottom: 0.8rem; }
+  .pubs .venue { font-style: italic; }
+  .links { font-family: system-ui, sans-serif; font-size: 0.9rem; }
+  .links a { margin-right: 1rem; white-space: nowrap; }
+  .note { color: var(--muted); font-size: 0.92rem; }
+  .headline {
+    background: var(--chip);
+    border-left: 3px solid var(--accent);
+    padding: 0.8rem 1rem;
+    margin: 1.2rem 0;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-family: system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Junior Maih</h1>
+  <p class="tagline">Applied macroeconomist &amp; econometrician · Creator of the RISE toolbox</p>
+  <p class="links">
+    <a href="mailto:junior.maih@gmail.com">junior.maih@gmail.com</a>
+    <a href="https://github.com/jmaih">GitHub</a>
+    <a href="https://ideas.repec.org/f/pma2398.html">IDEAS/RePEc</a>
+    <a href="https://github.com/jmaih/RISE_toolbox">RISE toolbox</a>
+    <!-- <a href="cv.pdf">CV (PDF)</a> -->
+    <!-- <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> -->
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#rise">RISE</a>
+  <a href="#teaching">Invited teaching</a>
+  <a href="#publications">Publications</a>
+  <a href="#papers">Working papers</a>
+  <a href="#talks">Talks</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I am an applied macroeconomist and econometrician with a passion for developing the
+    algorithms and software that turn frontier methods into practical tools for policy
+    analysis. My research centers on regime-switching DSGE models, nonlinear filtering
+    and estimation, optimal monetary policy, and conditional forecasting.
+  </p>
+  <p>
+    I am a Senior Economist and Special Adviser at Norges Bank, and I currently serve as
+    a consultant to the International Monetary Fund's Monetary and Capital Markets
+    Department (2024&ndash;2026); I have also consulted for the European Stability
+    Mechanism (2024&ndash;2025). Previously I was an economist in the Modeling Division
+    of the IMF's Research Department (2011&ndash;2013), an Associate Professor at the
+    BI Norwegian Business School (2013&ndash;2021), and a member of the
+    <a href="https://www.dynare.org">Dynare</a> development team (2011&ndash;2025).
+    I hold a Ph.D. in Economics from the University of Oslo.
+  </p>
+</section>
+
+<section id="rise">
+  <h2>RISE — Rationality In Switching Environments</h2>
+  <div class="headline">
+    An open toolbox for solving and estimating Markov-switching rational-expectations
+    models &mdash; taught by invitation at the IMF, the Federal Reserve System,
+    the Bank of Canada, the European Central Bank, and many other institutions.
+  </div>
+  <p>
+    <a href="https://github.com/jmaih/RISE_toolbox">RISE</a> is an object-oriented
+    MATLAB toolbox for the modeling, solution, estimation, and analysis of nonlinear
+    switching rational-expectations systems &mdash; with constant-parameter models as a
+    special case. Highlights include:
+  </p>
+  <ul>
+    <li>Perturbation solutions of regime-switching DSGE models up to 5th order</li>
+    <li>Optimal policy with and without regime switching: Ramsey, commitment, loose commitment</li>
+    <li>Occasionally binding constraints (e.g. the zero lower bound) via regime switching</li>
+    <li>Structural, reduced-form, panel, and proxy VARs — with and without regime switching</li>
+    <li>Nonlinear filtering, Bayesian estimation, conditional forecasting, and DSGE-VAR analysis</li>
+  </ul>
+  <p class="note">
+    Dedicated RISE workshops have been hosted in Tokyo (2025) and Pretoria (2024), with
+    courses taught at the University of Glasgow, Heriot-Watt University, and central
+    banks and institutions worldwide.
+  </p>
+</section>
+
+<section id="teaching">
+  <h2>Invited teaching &amp; courses</h2>
+  <ul>
+    <li><strong>International Monetary Fund</strong> — mini-course “Solving and Estimating Macroeconomic Models with Regime Switches” (2021); ongoing modeling projects with MCM (2024&ndash;2026)</li>
+    <li><strong>Federal Reserve System</strong> — Board of Governors (2012, 2022); Federal Reserve Banks of Atlanta (2009&ndash;2012, 2017) and Cleveland (2021, 2022, 2025)</li>
+    <li><strong>European Central Bank</strong> — RISE toolbox presentation (2015) and invited visits (2014, 2017, 2020, 2021, 2024)</li>
+    <li><strong>Bank of Canada</strong> — invited visits and workshops (2015, 2018, 2019)</li>
+    <li><strong>RISE workshops</strong> — Tokyo, Japan (2025); Pretoria, South Africa (2024)</li>
+    <li><strong>Universities</strong> — RISE courses at the University of Glasgow and Heriot-Watt University (2024); regular lectures at Waseda, Kobe, Indiana, and others</li>
+    <li><strong>Dynare community</strong> — Dynare Summer School (Paris, 2023, 2024); advanced-user workshops at the EC Joint Research Centre, Ispra (2023&ndash;2025)</li>
+    <li><strong>Regional central-bank training</strong> — SEACEN (Kuala Lumpur), CEMLA (Mexico City), BEAC (Yaoundé), and the central banks of Armenia, Latvia, Lithuania, and Tanzania, among others</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Refereed publications</h2>
+  <ul class="pubs">
+    <li>Nigar Hashimzade, Oleg Kirsanov, Tatiana Kirsanova &amp; Junior Maih (2026). Filtering and Smoothing in State-Space Models with Multiple Regimes. <span class="venue">Journal of Business and Economic Statistics</span>, forthcoming.</li>
+    <li>Junior Maih, Babatunde S. Omotosho &amp; Bo Yang (2026). Mitigating the Impact of Fuel Subsidy Removal in an Oil-Producing Emerging Economy. <span class="venue">Energy Economics</span>, vol. 156.</li>
+    <li>Johan Gustafsson, Xiaofei Ma, Junior Maih &amp; Mathias Vesterberg (2025). Macroeconomic Effects of Fiscal Policy under an Energy Supply Shock. <span class="venue">Energy Policy</span>, vol. 203.</li>
+    <li>Junior Maih, Falk Mazelis, Roberto Motto &amp; Annukka Ristiniemi (2021). Asymmetric Monetary Policy Rules for the Euro Area and the US. <span class="venue">Journal of Macroeconomics</span>, vol. 70.</li>
+    <li>Yoosoon Chang, Junior Maih &amp; Fei Tan (2021). Origins of Monetary Policy Shifts: A New Approach to Regime Switching in DSGE Models. <span class="venue">Journal of Economic Dynamics and Control</span>, vol. 133.</li>
+    <li>Ragna Alstadheim, Hilde C. Bjørnland &amp; Junior Maih (2021). Do Central Banks Respond to Exchange Rate Movements? A Markov-Switching Structural Investigation of Commodity Exporters and Importers. <span class="venue">Energy Economics</span>, vol. 96.</li>
+    <li>Hilde C. Bjørnland, Vegard H. Larsen &amp; Junior Maih (2018). Oil and Macroeconomic (In)stability. <span class="venue">American Economic Journal: Macroeconomics</span>, vol. 10(4), 128&ndash;151.</li>
+    <li>Karsten Gerdrup, Frank Hansen, Tord Krogh &amp; Junior Maih (2017). Leaning Against the Wind When Credit Bites Back. <span class="venue">International Journal of Central Banking</span>, vol. 13(3), 287&ndash;320.</li>
+    <li>Hilde C. Bjørnland &amp; Junior Maih (2014). Monetary Policy and Exchange Rate Stabilization in Norway and Sweden. In <span class="venue">Reform Capacity and Macroeconomic Performance in the Nordic Countries</span>, Oxford University Press.</li>
+    <li>Davide Debortoli, Junior Maih &amp; Ricardo Nunes (2014). Loose Commitment in Medium-Scale Macroeconomic Models: Theory and Applications. <span class="venue">Macroeconomic Dynamics</span>, vol. 18(1), 175&ndash;198.</li>
+    <li>Hilde C. Bjørnland, Kai Leitemo &amp; Junior Maih (2011). Estimating the Natural Rates in a Simple New Keynesian Framework. <span class="venue">Empirical Economics</span>, vol. 40(3), 755&ndash;777.</li>
+  </ul>
+</section>
+
+<section id="papers">
+  <h2>Selected working papers</h2>
+  <ul class="pubs">
+    <li>Nigar Hashimzade, Oleg Kirsanov, Tatiana Kirsanova &amp; Junior Maih (2024). On Bayesian Filtering for Markov Regime Switching Models. <span class="venue">arXiv 2402.08051; CESifo WP 10941</span>.</li>
+    <li>Mohamed Tahar Benkhodja, Johan Gustafsson, Xiaofei Ma &amp; Junior Maih (2025). Climate Policy and Gender Inequality. <span class="venue">Norges Bank WP 11/2025</span>.</li>
+    <li>Junior Maih &amp; Wooheon Rhee (2025). Revisiting the Asian Currency Crisis in South Korea: A Counterfactual Analysis Using a Regime-Switching DSGE Model. <span class="venue">Norges Bank WP 6/2025</span>.</li>
+    <li>Ryo Kato, Junior Maih &amp; Shin-Ichi Nishiyama (2025). Trend Inflation in the Japanese pre-2000s: A Markov-Switching DSGE Estimation. <span class="venue">Norges Bank WP 3/2025</span>.</li>
+    <li>Jin Cao, Masashige Hamano &amp; Junior Maih (2024). Financial Frictions, Heterogeneous Firms and Monetary Policy. <span class="venue">Norges Bank WP 13/2024</span>.</li>
+    <li>Andrew Binning &amp; Junior Maih (2017). Modelling Occasionally Binding Constraints Using Regime-Switching. <span class="venue">Norges Bank WP 2017/23</span>.</li>
+    <li>Junior Maih (2015). Efficient Perturbation Methods for Solving Regime-Switching DSGE Models. <span class="venue">Norges Bank WP 2015/01</span>.</li>
+    <li>Junior Maih (2010). Conditional Forecasts in DSGE Models. <span class="venue">Norges Bank WP 2010/07</span>.</li>
+  </ul>
+  <p class="note">Full list on <a href="https://ideas.repec.org/f/pma2398.html">IDEAS/RePEc</a>.</p>
+</section>
+
+<section id="talks">
+  <h2>Talks</h2>
+  <p>
+    I have given invited lectures, seminars, and conference presentations at more than
+    sixty institutions across five continents, including the Bank of England, Sveriges
+    Riksbank, Banque de France, the Bundesbank, the National Bank of Belgium, the
+    European Stability Mechanism, the Reserve Banks of Australia and New Zealand, and
+    universities from Stanford and Cambridge to Waseda and Stellenbosch. Recent
+    highlights (2025): the European Stability Mechanism, the Cleveland Fed, the Bank of
+    England, the 19th Dynare Conference (Helsinki), SNDE (San Antonio), and the
+    3rd RISE Workshop (Tokyo).
+  </p>
+</section>
+
+<footer>
+  <p>Junior Maih · Oslo, Norway · <a href="mailto:junior.maih@gmail.com">junior.maih@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>
